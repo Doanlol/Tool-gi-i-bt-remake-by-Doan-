@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name         Giải Bài Thông Minh
 // @namespace    http://tampermonkey.net/
@@ -21,7 +22,7 @@
     'use strict';
     
     // ⚙️ CẤU HÌNH - THAY ĐỔI URL NÀY
-    const API_BASE_URL = 'https://your-username.github.io/giai-bai-ai/';
+    const API_BASE_URL = 'https://Doanlol.github.io/giai-bai-ai/';
     
     // Inject KaTeX CSS
     const katexCSS = GM_getResourceText('KATEX_CSS');
