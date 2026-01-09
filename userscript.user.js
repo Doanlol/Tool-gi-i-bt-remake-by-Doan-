@@ -22,7 +22,7 @@
     'use strict';
     
     // ⚙️ CẤU HÌNH - THAY ĐỔI URL NÀY
-    const API_BASE_URL = 'https://Doanlol.github.io/giai-bai-ai/';
+    const API_BASE_URL = 'https://doanlol.github.io/Tool-gi-i-bt-remake-by-Doan-/';
     
     // Inject KaTeX CSS
     const katexCSS = GM_getResourceText('KATEX_CSS');
