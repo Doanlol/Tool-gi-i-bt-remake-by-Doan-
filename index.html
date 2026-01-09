@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Bài Thông Minh API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .status {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 8px;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        .install-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .install-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        ol {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2">
+                <path d="M12 6.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"/>
+                <path d="m15.5 9.5 3.5-3.5"/>
+                <path d="M17 2h4v4"/>
+                <path d="m8.5 14.5-3.5 3.5"/>
+                <path d="M7 22H3v-4"/>
+            </svg>
+            Giải Bài Thông Minh
+        </h1>
+        <p style="color: #666; margin-bottom: 20px;">Chụp màn hình bài tập và nhận lời giải chi tiết từ AI</p>
+        
+        <div class="status">✅ API đang hoạt động bình thường</div>
+
+        <h3 style="margin-top: 30px;">📖 Hướng dẫn sử dụng:</h3>
+        <ol>
+            <li>Cài đặt <strong>Tampermonkey</strong> extension cho trình duyệt của bạn</li>
+            <li>Click nút bên dưới để cài userscript</li>
+            <li>Truy cập bất kỳ trang web nào (có bài tập cần giải)</li>
+            <li>Click nút <strong>"📸 Giải Bài"</strong> ở góc dưới phải</li>
+            <li>Chờ AI phân tích và nhận kết quả!</li>
+        </ol>
+
+        <div class="note">
+            <strong>⚠️ Lưu ý:</strong> Userscript hoạt động tốt nhất trên Chrome, Edge, Firefox. 
+            Trên Android, bạn có thể dùng <strong>Kiwi Browser</strong> hoặc <strong>Firefox + Tampermonkey</strong>.
+        </div>
+
+        <a href="userscript.user.js" class="install-btn">
+            🚀 Cài đặt Userscript
+        </a>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+  </html>
